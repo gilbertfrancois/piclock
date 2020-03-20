@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "piclock"
+version = "0.1.0"
+description = ""
+authors = ["Gilbert Francois Duivesteijn <gilbert@deep-impact.ch>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pygame = ">=2.0.0.dev6"
+numpy = "^1.18.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
