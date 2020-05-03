@@ -2,7 +2,7 @@
 name = "piclock"
 version = "0.1.0"
 description = ""
-authors = ["Gilbert Francois Duivesteijn <gilbert@deep-impact.ch>"]
+authors = ["Gilbert Francois Duivesteijn <info@gilbertfrancois.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
