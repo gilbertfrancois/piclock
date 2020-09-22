@@ -6,7 +6,7 @@ authors = ["Gilbert Francois Duivesteijn <info@gilbertfrancois.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-pygame = ">=2.0.0.dev6"
+pygame = ">=2.0.0.dev12"
 numpy = "^1.18.1"
 
 [tool.poetry.dev-dependencies]
