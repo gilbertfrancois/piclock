@@ -24,3 +24,17 @@ python3 main.py
 ```
 
 ![piclock](images/IMG_5926.jpeg)
+
+
+## Troubleshooting
+
+If you see an error like
+```
+Traceback (most recent call last):
+  File "main.py", line 124, in <module>
+    clock = PiClock(screen_width=320, screen_height=240, use_framebuffer=True)
+  File "main.py", line 19, in __init__
+    self.screen_resolution = (pygame.display.Info().current_w, pygame.display.Info().current_h)
+pygame.error: video system not initialized
+```
+the current user account has not the permission to access the framebuffer. Try running the program with `sudo`.
