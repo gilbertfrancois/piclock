@@ -8,7 +8,7 @@ import pygame.gfxdraw
 class Theme:
     BLACK = (0, 0, 0)
     LIGHT_GRAY = (210, 210, 210)
-    DARK_GRAY = (30, 30, 30)
+    DARK_GRAY = (60, 60, 60)
     WHITE = (255, 255, 255)
     ORANGE = (200, 100, 0)
     RED = (200, 0, 0)
@@ -18,11 +18,11 @@ class Theme:
     def __init__(self, background, ticks, hours, minutes, seconds, pivot, logo, date):
         self.settings = {
             "background": {"color1": Theme.BLACK, "color2": background, "center": [0.0, 0.0], "radius1": 0.0},
-            "ticks": {"color": ticks, "center": [0.0, 0.0], "radius1": 0.75, "radius2": 0.95, "width": 0.01},
-            "hours": {"color": hours, "center": [0.0, 0.0], "radius1": 0.0, "radius2": 0.66, "width": 0.03},
-            "minutes": {"color": minutes, "center": [0.0, 0.0], "radius1": 0.0, "radius2": 0.95, "width": 0.03},
-            "seconds": {"color": seconds, "center": [0.0, 0.0], "radius1": 0.0, "radius2": 0.95, "width": 0.01},
-            "pivot": {"color": pivot, "center": [0.0, 0.0], "radius1": 0.02},
+            "ticks": {"color": ticks, "center": [0.0, 0.0], "radius1": 0.75, "radius2": 0.95, "width": 0.04},
+            "hours": {"color": hours, "center": [0.0, 0.0], "radius1": 0.0, "radius2": 0.66, "width": 0.04},
+            "minutes": {"color": minutes, "center": [0.0, 0.0], "radius1": 0.0, "radius2": 0.95, "width": 0.04},
+            "seconds": {"color": seconds, "center": [0.0, 0.0], "radius1": 0.0, "radius2": 0.95, "width": 0.02},
+            "pivot": {"color": pivot, "center": [0.0, 0.0], "radius1": 0.04},
             "logo": {"color": logo, "font_size": 24 / 240, "center": [0.0, -(0.5 * 0.75)], "label": "TREBLIG"},
             "date": {"color": date, "font_size": 36 / 240, "label": "", "border_margin": [-0.03, -0.015, 0.03, 0.015]}
         }
@@ -119,7 +119,7 @@ class PiClock:
             self.screen_resolution = np.array(screen_resolution)
         self.surface = pygame.display.set_mode(self.screen_resolution)
         pygame.display.set_caption("My Clock")
-        pygame.mouse.set_visible(True)
+        pygame.mouse.set_visible(False)
         pygame.font.init()
         self.clock = pygame.time.Clock()
         # self.scale = 0.5*np.min(np.array(self.screen_resolution)) * np.ones(2)
